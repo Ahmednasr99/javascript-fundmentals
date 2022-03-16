@@ -50,8 +50,9 @@ const blender = (string) =>{
     return string.split('')
 }
 
-const square = (num, message) =>{
+/*const square = (num, message) =>{
    console.log(num*num) 
    console.log("message", message)
 
 }
+*/

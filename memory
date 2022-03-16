@@ -1,20 +1,18 @@
-const greet = () =>{
+const greet = ()=>{
     console.log("hello world")
+
 }
 
-greet()
-
+great()
 
 const square = (num) =>{
     return num*num
 }
-
-square(100)
-
+square(411)
 
 const greatByName = (str) =>{
-    console.log(`hello ${str}`)
-}
+    console.log(`hello ${str})
 
+}
 
 greatByName("Ahmed")
