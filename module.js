@@ -43,9 +43,7 @@ const functionC = (f) =>{
 
 }
 
-const great = (person) =>{
-    console.log("hello", person)
-}
+
 
 
 const blender = (string) =>{
