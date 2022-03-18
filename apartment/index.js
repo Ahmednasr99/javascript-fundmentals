@@ -16,7 +16,32 @@ let building = {
     lease         : function(apt,tent){
         if(apt.tents.length===apt.bedroom){
                return `${apt.unit} is already full`
-        }else
-            apt.tents.push(tent)
-            console.log(tent.name,"has rent out",apt.unit)}    
+        }else{
+            let t =apt.tents.push(tent)
+            console.log(tent.name,"has rent out",apt.unit)
+            return t 
+        }
+            
+        
+        },
+            
+            
+    occupiedApp : function(){
+        return this.apartments.filter((el)=> {
+            return el.tents.length>0
+
+        })
+    },
+
+    fullApp : function(){
+        //return only apt with is fully occupied
+        // the condition is when apt.tents.length === apartments.bedroom
+
+        return this.apartments.filter((el)=>{
+            return el.tents.length===el.bedroom
+        }
+
+        )
+
+    },
 }
